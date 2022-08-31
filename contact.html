@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WHITNEY HOUSTON MUSIC FOUNDATION</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">    
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">WHITNEY HOUSTON MUSIC FOUNDATION<span>.</span></a>
+		<div class="menuToggle" onclick="toggleMenu()"></div>
+		<ul class="navigation">
+			<li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+			<li><a href="career.html" onclick="toggleMenu()">Career</a></li>
+			<li><a href="awards.html" onclick="toggleMenu()">Awards</a></li>
+			<li><a href="memoriam.html" onclick="toggleMenu()">In Memoriam</a></li>
+			<li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+		</ul>
+	</header>
+	<section class="banner" id="banner"style="
+	background: url(https://www.nme.com/wp-content/uploads/2019/04/GettyImages-85342956.jpg);
+	">
+		<div class="content">
+			<h2>Always choose good</h2>
+			<p>
+				Make A Donation 
+			</p>
+			<a href="index.html" class="btn">Home Page</a><br>
+		</div>
+	</section>
+    <section class="contact" id="contact">
+		<div class="title">
+			<h2 class="titleText"><span>C</span>ontact Us</h2>
+			<p>Help us to enlight more young artist.</p>
+		</div>
+            <div class="contact">
+                <h3>Make a Donation</h3>
+                <form>
+                  <p>
+                    <label>Name</label>
+                    <input type="text" name="name">
+                  </p>
+                  <p>
+                    <div class="currency-wrap">
+                        <label>Donation Amount</label>
+                        <span class="currency-code">$</span>
+                        <input type="number" class="text-currency"/>
+                    </div>
+                  </p>
+                  <p>
+                    <label>Email Address</label>
+                    <input type="email" name="email">
+                  </p>
+                  <p>
+                    <label>Phone Number</label>
+                    <input type="text" name="phone">
+                  </p>
+                  <p class="full">
+                    <label>Notes</label>
+                    <textarea name="message" rows="5"></textarea>
+                  </p>
+                  <p class="full">
+                    <button>Submit</button>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+       
+        
+	</section>
+  
+
+	
+
+	<div class="copyrightText">
+		<p>7 Times Sq, Boston, MA 10036</p>
+		<a href="https://www.instagram.com/whitneyhouston/"class="fa fa-instagram"></a>></a>
+            <a href="https://open.spotify.com/artist/6XpaIBNiVzIetEPCWDvAFP"class="fa fa-spotify"></a>></a>
+            <a href="#"class="fa fa-facebook"></a>></a>
+            <a href="https://goo.gl/maps/GNzdw69SPSAi59e89"class="fa fa-map"></a>></a>
+            <a href="Contact.html"class="fa fa-phone"></a>></a>
+	</div>
+
+	
+	<script type="text/javascript">
+		window.addEventListener('scroll', function(){
+			const header = document.querySelector('header');
+			header.classList.toggle("sticky", window.scrollY > 0);
+		});
+
+		function toggleMenu()
+		{
+			const menuToggle = document.querySelector('.menuToggle');
+			const navigation = document.querySelector('.navigation');
+			menuToggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>
